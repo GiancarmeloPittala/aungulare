@@ -1,13 +1,8 @@
-<app-cover /> 
-<app-todo-input (emitNewTodos)="addNewTodo($event)" ></app-todo-input>
+<header>
+  <ul class="flex gap-4 px-8 py-4">
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/about">About</a></li>
+  </ul>
+</header>
 
-<div class="container mx-auto flex justify-center mt-8">
-  <div class="max-w-xl w-full flex flex-col gap-4">
-    <app-todo (emitDeleteTodo)="deleteTodo($event)" *ngFor="let todo of todos; let i= index;" [todo]="todo" [index]="i" />
-  </div>
-</div>
-
-
-<div *ngFor="let user of users.users">
-  {{ user.nome }}
-</div>
+<router-outlet></router-outlet>
