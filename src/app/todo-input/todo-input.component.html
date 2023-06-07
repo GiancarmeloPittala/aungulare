@@ -1,0 +1,6 @@
+<div class="flex justify-center">
+  <div class="flex gap-2 max-w-xl">
+    <input (keyup.enter)="addNewTodo(newTodo)" [(ngModel)]="newTodo" class="rounded-lg border-2 border-gray-800 px-4 py-2" type="text" name="todoInput" id="todoInput" placeholder="Pizza">
+    <button (click)="addNewTodo(newTodo)" title="Aggiungi" class="py-3 px-6 border-2 rounded-lg border-gray-800 bg-gray-900 text-gray-50 hover:text-gray-800 hover:bg-gray-50 transition-colors">Aggiungi</button>
+  </div>
+</div>
