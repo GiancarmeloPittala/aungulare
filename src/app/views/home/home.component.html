@@ -6,8 +6,3 @@
     <app-todo (emitDeleteTodo)="deleteTodo($event)" *ngFor="let todo of todos; let i= index;" [todo]="todo" [index]="i" />
   </div>
 </div>
-
-
-<div *ngFor="let user of users.users">
-  {{ user.nome }}
-</div>

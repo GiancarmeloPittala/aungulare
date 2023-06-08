@@ -14,6 +14,7 @@ import { RouterModule } from '@angular/router';
 import { AboutComponent } from './views/about/about.component';
 import { HomeComponent } from './views/home/home.component';
 import { ErrorComponent } from './components/error/error.component';
+import { LoginComponent } from './views/login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ErrorComponent } from './components/error/error.component';
     TodoComponent,
     AboutComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
