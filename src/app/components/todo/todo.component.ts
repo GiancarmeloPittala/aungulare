@@ -14,7 +14,7 @@ export class TodoComponent {
   @Input() 
   get todo(): String { return this._todo; }
   set todo(todo: String) {
-    this._todo = (todo && todo.trim()) || '<no Todo set>';
+    this._todo = (todo && todo.trim()) || '<no Todo sets>';
   };
 
   @Input() 
